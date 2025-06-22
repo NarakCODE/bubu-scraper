@@ -1,4 +1,3 @@
-```markdown
 # 🔍 Website Contact Info Scraper
 
 [![Vercel Deploy Status](https://img.shields.io/vercel/deploy?label=vercel&style=flat-square&logo=vercel)](https://vercel.com)
@@ -42,7 +41,6 @@ A full-stack web application that allows users to enter a website URL and automa
 ---
 
 ## 📁 Project Structure (App Router)
-```
 
 /app
 /page.tsx # Main UI page
