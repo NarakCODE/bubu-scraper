@@ -74,9 +74,9 @@ export const ResultTabs = ({ data }: ResultTabsProps) => {
       </TabsList>
 
       {/* Tab Content */}
+      <EmailTab emails={data.emails} />
       <ImageTab images={data.images} />
       <VideoTab videos={data.videos} />
-      <EmailTab emails={data.emails} />
       <PhoneTab phoneNumbers={data.phoneNumbers} />
       <SocialTab socialLinks={data.socialLinks} />
       <DocumentTab documents={data.documents} />

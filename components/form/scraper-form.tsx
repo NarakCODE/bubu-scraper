@@ -70,7 +70,7 @@ interface ScraperFormProps {
 
 const EXAMPLE_URLS = [
   { label: 'RUPP', url: 'https://www.rupp.edu.kh/' },
-  { label: 'FreeCodeCamp', url: 'https://www.freecodecamp.org/news/' },
+  { label: 'Framer', url: 'https://www.framer.com/' },
   { label: 'W3Schools', url: 'https://www.w3schools.com/' },
   { label: 'KhmerCoders', url: 'https://khmercoder.com/' },
   { label: 'Dribble', url: 'https://dribbble.com/' },
@@ -119,7 +119,7 @@ export function ScraperForm({
   const urlValue = form.watch('url');
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col items-center space-y-6">
+    <div className="mx-auto flex w-full max-w-2xl flex-col items-center space-y-6 lg:mt-64 mt-44 mb-16 lg:mb-32 ">
       <div className="flex flex-col items-center text-center space-y-2">
         {/* <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit">
           <Globe className="h-7 w-7 text-primary" />

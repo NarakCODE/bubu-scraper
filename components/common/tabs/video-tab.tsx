@@ -33,8 +33,7 @@ export const VideoTab = ({ videos }: VideoTabProps) => (
                 key={index}
                 autoPlay
                 loop
-                autoHide
-                showControls
+                showControls={true}
                 className="aspect-video"
               />
             ))}
