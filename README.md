@@ -12,7 +12,9 @@ A full-stack web application that allows users to enter a website URL and automa
 
 ## 📺 Live Demo
 
-🔗 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+<!-- 🔗 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app) -->
+
+Soon
 
 ---
 
@@ -59,7 +61,7 @@ scraper.ts # Scraping and parsing logic
 
 ```bash
 # Clone the repo
-git clone https://github.com/yourusername/contact-scraper.git
+git clone https://github.com/narakcode/bubu-scraper.git
 
 # Install dependencies
 cd contact-scraper
@@ -97,13 +99,13 @@ npm run dev
 
 ## 📄 License
 
-MIT — [Your Name](https://yourportfolio.com)
+MIT — [NarakCODE](https://narakcode.vercel.com)
 
 ---
 
 ## 💬 Feedback
 
-Feel free to open issues or PRs. You can also reach me at [your@email.com](mailto:your@email.com)
+Feel free to open issues or PRs. You can also reach me at [channarakluy@gmail.com](mailto:channarakluy@gmail.com)
 
 ```
 
