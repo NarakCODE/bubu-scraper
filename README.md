@@ -1,36 +1,120 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+```markdown
+# 🔍 Website Contact Info Scraper
 
-## Getting Started
+[![Vercel Deploy Status](https://img.shields.io/vercel/deploy?label=vercel&style=flat-square&logo=vercel)](https://vercel.com)
+[![Made with Next.js](https://img.shields.io/badge/Made%20with-Next.js-000?style=flat-square&logo=next.js)](https://nextjs.org)
+[![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](#license)
 
-First, run the development server:
+A full-stack web application that allows users to enter a website URL and automatically extracts public contact information like **emails**, **phone numbers**, **social media links**, and **logos** from the page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+> Built with **Next.js**, **Tailwind CSS**, **Cheerio**, and deployed on **Vercel**.
+
+---
+
+## 📺 Live Demo
+
+🔗 [https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)
+
+---
+
+## 🧩 Features
+
+-   ✅ Input any website URL
+-   📨 Automatically extract email addresses
+-   ☎️ Grab phone numbers using regex
+-   🌐 Detect social links (Facebook, LinkedIn, Twitter, etc.)
+-   🖼️ Pull logo or main image using meta tags
+-   📋 Copy or export contact info
+-   🧪 Validates and sanitizes user input
+-   💡 Fully responsive, mobile-friendly UI
+
+---
+
+## 🛠 Tech Stack
+
+| Layer          | Tech                                      |
+| -------------- | ----------------------------------------- |
+| **Frontend**   | Next.js (App Router), React, Tailwind CSS |
+| **Backend**    | Next.js API Routes                        |
+| **Scraping**   | Cheerio, Axios, Regex                     |
+| **Deployment** | Vercel                                    |
+
+---
+
+## 📁 Project Structure (App Router)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+/app
+/page.tsx # Main UI page
+/api/scrape/route.ts # API handler for scraping logic
+/components
+URLForm.tsx # Input form
+ResultCard.tsx # Result display component
+/lib
+scraper.ts # Scraping and parsing logic
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+````
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🚀 Getting Started
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+# Clone the repo
+git clone https://github.com/yourusername/contact-scraper.git
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Install dependencies
+cd contact-scraper
+npm install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Run locally
+npm run dev
+````
 
-## Deploy on Vercel
+> Environment variables are not required for basic scraping, but you can set custom proxy or user agents if needed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📦 Future Improvements
+
+-   🧠 Use Puppeteer for dynamic JavaScript scraping
+-   📸 Generate screenshots or previews of the target site
+-   🗃️ Add database to track scrape history per user
+-   🧾 CSV/JSON export support
+-   🔐 Add GitHub OAuth login
+
+---
+
+## 🧠 Skills Demonstrated
+
+-   ✅ Full-stack web app development with React/Next.js
+-   ✅ Web scraping and DOM parsing
+-   ✅ Regex for data extraction (emails, phones)
+-   ✅ Async APIs and error handling
+-   ✅ Responsive frontend with Tailwind CSS
+-   ✅ Clean code structure and component reusability
+-   ✅ CI/CD and deployment via Vercel
+
+---
+
+## 📄 License
+
+MIT — [Your Name](https://yourportfolio.com)
+
+---
+
+## 💬 Feedback
+
+Feel free to open issues or PRs. You can also reach me at [your@email.com](mailto:your@email.com)
+
+```
+
+---
+
+### ✅ What to do next:
+- Replace demo link with your actual **Vercel deployment URL**
+- Update `yourusername`, contact info, and license
+- Push it to GitHub!
+
+Let me know if you'd like a **GitHub repo name suggestion** or the initial code scaffolding next!
+```
