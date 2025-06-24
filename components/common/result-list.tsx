@@ -17,6 +17,7 @@ import {
 import { X, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ActionSearchBar from '../form/action-search-bar';
+import { Skeleton } from '../ui/skeleton';
 
 export const ResultList = () => {
   const [scrapedData, setScrapedData] = useState<ScrapedData | null>(null);
@@ -32,12 +33,12 @@ export const ResultList = () => {
   const handleScrapeComplete = (data: ScrapedData) => {
     setScrapedData(data);
     setIsLoading(false);
-    toast.success(`Scraping Complete!`);
+    // toast.success(`Scraping Complete!`);
   };
 
   const handleScrapeError = (error: Error) => {
     setIsLoading(false);
-    toast.error(`Scraping Failed: ${error.message}`);
+    // toast.error(`Scraping Failed: ${error.message}`);
   };
 
   const handleDrawerClose = () => {
@@ -65,11 +66,11 @@ export const ResultList = () => {
           <DrawerHeader>
             {isLoading ? (
               <div className="flex items-center justify-center">
-                <Loader2 className="h-6 w-6 animate-spin" />
+                <Skeleton className="h-6 w-full max-w-xs" />
               </div>
             ) : (
               <DrawerDescription>
-                BuBu Scraper can make a mistake sometimes.
+                <DrawerTitle>Scraped Results</DrawerTitle>
               </DrawerDescription>
             )}
           </DrawerHeader>
@@ -82,7 +83,7 @@ export const ResultList = () => {
             )}
 
             {!isLoading && scrapedData && (
-              <div className="space-y-4">
+              <div className="space-y-4 w-full container mx-auto">
                 <ResultDisplay data={scrapedData} />
               </div>
             )}
