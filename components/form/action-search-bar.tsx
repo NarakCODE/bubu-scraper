@@ -225,7 +225,7 @@ function ActionSearchBar({
                 onFocus={handleFocus}
                 onBlur={handleBlur}
                 disabled={isPending}
-                className="pl-3 pr-12 py-2 h-11 text-sm rounded-lg focus-visible:ring-offset-0"
+                className="pl-3 pr-12 py-2 h-11 text-base rounded-lg focus-visible:ring-offset-0"
               />
               <div className="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1">
                 <AnimatePresence mode="popLayout">
