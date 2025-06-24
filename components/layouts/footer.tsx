@@ -40,11 +40,11 @@ const FooterLink = ({ href, text }: { href: string; text: string }) => (
 
 export function Footer() {
   return (
-    <footer className="relative w-full border-t bg-background pt-16 mt-32 text-sm">
+    <footer className="relative w-full bg-background pt-16 mt-32 text-sm">
       <div className="container mx-auto px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          {/* Brand and Socials */}
-          <div className="lg:col-span-1">
+        {/* <div className="grid grid-cols-1 gap-8 lg:grid-cols-3"> */}
+        {/* Brand and Socials */}
+        {/* <div className="lg:col-span-1">
             <Logo />
             <p className="mt-4 max-w-xs text-muted-foreground">
               The simplest way to extract web data without the hassle.
@@ -61,10 +61,10 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-          </div>
+          </div> */}
 
-          {/* Link Columns */}
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-2">
+        {/* Link Columns */}
+        {/* <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:col-span-2">
             <div>
               <h4 className="mb-4 font-semibold text-foreground">Product</h4>
               <ul className="space-y-3">
@@ -89,8 +89,8 @@ export function Footer() {
                 ))}
               </ul>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* Bottom Bar */}
         <div className="mt-16 flex flex-col items-center justify-between border-t border-border pt-8 pb-8 sm:flex-row">

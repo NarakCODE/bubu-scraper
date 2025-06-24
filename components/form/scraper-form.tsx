@@ -69,11 +69,9 @@ interface ScraperFormProps {
 }
 
 const EXAMPLE_URLS = [
-  { label: 'RUPP', url: 'https://www.rupp.edu.kh/' },
-  { label: 'Framer', url: 'https://www.framer.com/' },
-  { label: 'W3Schools', url: 'https://www.w3schools.com/' },
-  { label: 'KhmerCoders', url: 'https://khmercoder.com/' },
-  { label: 'Dribble', url: 'https://dribbble.com/' },
+  { label: 'https://www.rupp.edu.kh/', url: 'https://www.rupp.edu.kh/' },
+  { label: 'https://www.framer.com/', url: 'https://www.framer.com/' },
+  { label: 'https://khmercoder.com/', url: 'https://khmercoder.com/' },
 ];
 
 export function ScraperForm({

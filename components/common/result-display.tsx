@@ -10,7 +10,7 @@ interface ResultDisplayProps {
 
 export const ResultDisplay = ({ data }: ResultDisplayProps) => {
   return (
-    <div className="mx-auto max-w-6xl space-y-8">
+    <div className="mx-auto w-full space-y-8">
       <div className="flex flex-col items-center">
         <ResultHeader title={data.title} description={data.description} />
         <div className="mt-4">
