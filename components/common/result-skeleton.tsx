@@ -4,7 +4,7 @@ import { Separator } from '@/components/ui/separator';
 export const ResultSkeleton = () => {
   return (
     <div className="min-h-screen p-4 md:p-6 lg:p-8">
-      <div className="mx-auto max-w-6xl space-y-8 animate-pulse">
+      <div className="mx-auto w-full space-y-8 animate-pulse">
         {/* Header Skeleton */}
         <div className="text-center space-y-4 flex flex-col items-center">
           <Skeleton className="h-10 w-3/5 rounded-lg" />
